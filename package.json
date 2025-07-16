@@ -1,0 +1,36 @@
+
+{
+  "name": "patchsecurityscanner",
+  "version": "1.0.0",
+  "description": "A CLI tool to detect vulnerabilities in npm package patch versions before installation.",
+  "main": "dist/index.js",
+  "bin": {
+    "patchsecurityscanner": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start":  "node bin/index.ts preinstall"
+  },
+  "keywords": ["npm", "security", "cli", "vulnerability", "scanner", "patch"],
+  "author": "Sunil Kumar J.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<your-username>/patchsecurityscanner-cli.git"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "ora": "^8.2.0",
+    "pacote": "^21.0.0",
+    "semver": "^7.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "@types/pacote": "^11.1.8",
+    "@types/semver": "^7.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
