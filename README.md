@@ -29,3 +29,6 @@ If vulnerable:
 ❌ Vulnerabilities found:
   - lodash@4.17.20
     CVE-2021-23337: Prototype pollution
+
+To scan your package.json file before installing it. 
+Use command : 'npx patchsecurityscanner preinstall'
